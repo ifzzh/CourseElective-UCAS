@@ -103,6 +103,7 @@
             border: 2px solid #007BFF;
             border-radius: 10px;
             padding: 10px;
+            margin-top: 10px;
             width: 400px;
         }
 
@@ -110,7 +111,11 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
-            margin-top: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            /* 与上方相邻单位的距离设置为10px */
+            
+            
         }
 
         .substep .step {
@@ -167,8 +172,17 @@
             <line x1="25" y1="0" x2="25" y2="40" stroke="#007BFF" stroke-width="2" />
             <polygon points="25,50 15,35 35,35" fill="#007BFF" />
         </svg>
-        <div class="step" id="step3">
+        <div class="step" id="step3" style="width: 420px;">
             补退选
+            <div class="substep-container">
+                <div class="substep">
+                    <div class="step">核心课</div>
+                    <div class="step">专业课</div>
+                    <div class="step">公必课</div>
+                    <div class="step">公选课</div>
+                    <div class="step">跨院系专业课</div>
+                </div>
+            </div>
 
             <div class="curve-box">
                 <svg class="curve-arrow" width="100" height="50" viewBox="0 0 100 50">
@@ -176,22 +190,10 @@
                         stroke-width="2" stroke-dasharray="5,5" fill="none" />
                 </svg>
             </div>
-            <div class="description">
+            <div class="description" style="left: 120%;">
                 学生们需要自己去访问选课系统，补选还有多余名额的课程，同时，可以选择退选之前选中的某门课程。
             </div>
-        </div>
-        <svg class="arrow" width="50" height="50" viewBox="0 0 50 50">
-            <line x1="25" y1="0" x2="25" y2="40" stroke="#007BFF" stroke-width="2" />
-            <polygon points="25,50 15,35 35,35" fill="#007BFF" />
-        </svg>
-        <div class="substep-container">
-            <div class="substep">
-                <div class="step">核心课</div>
-                <div class="step">专业课</div>
-                <div class="step">公必课</div>
-                <div class="step">公选课</div>
-                <div class="step">跨院系专业课</div>
-            </div>
+            
         </div>
         <svg class="arrow" width="50" height="50" viewBox="0 0 50 50">
             <line x1="25" y1="0" x2="25" y2="40" stroke="#007BFF" stroke-width="2" />
